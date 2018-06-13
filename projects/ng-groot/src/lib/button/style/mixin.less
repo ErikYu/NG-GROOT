@@ -1,0 +1,43 @@
+
+.btn() {
+    color: #fff;
+    outline: none;
+    box-sizing: border-box;
+    display: inline-block;
+    border-width: @btn-border;
+    box-shadow: none;
+    margin-right: 8px;
+    margin-bottom: 12px;
+}
+
+.btn-size(@height; @padding; @font-size; @border-radius) {
+    padding: @padding;
+    font-size: @font-size;
+    border-radius: @border-radius;
+    height: @height;
+}
+
+.btn-type(@type) {
+    @cls-type: "btn-@{type}-background";
+    @hover-cls-type: "btn-@{type}-hover-background";
+    @active-cls-type: "btn-@{type}-active-background";
+    background: @@cls-type;
+    border-color: @@cls-type;
+    &:hover{
+        background: @@hover-cls-type;
+        border-color: @@hover-cls-type;
+    }
+
+    &:active{
+        background: @@active-cls-type;
+        border-color: transparent;
+    }
+}
+
+.btn-ghost {
+    background: transparent;
+    color: #000;
+    &:hover {
+        color: #fff;
+    }
+}

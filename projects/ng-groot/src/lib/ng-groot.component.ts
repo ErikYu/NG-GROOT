@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'groot-ng-groot',
+  selector: 'gt-ng-groot',
   template: `
     <p>
       ng-groot works!

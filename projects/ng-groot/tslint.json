@@ -4,13 +4,16 @@
         "directive-selector": [
             true,
             "attribute",
-            "groot",
+            "gt",
             "camelCase"
         ],
         "component-selector": [
             true,
-            "element",
-            "groot",
+            [
+                "element",
+                "attribute"
+            ],
+            "gt",
             "kebab-case"
         ]
     }

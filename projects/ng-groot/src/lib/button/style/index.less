@@ -1,0 +1,41 @@
+@import "../../aastyle/default";
+@import "./mixin";
+@btn-prefix-cls: ~"gt-btn";
+
+
+.@{btn-prefix-cls} {
+    .btn;
+    .btn-type('primary');
+    .btn-size(@btn-sm-height, @btn-sm-padding, @btn-sm-font, @btn-sm-radius);
+    &-small {
+        .btn-size(@btn-sm-height, @btn-sm-padding, @btn-sm-font, @btn-sm-radius);
+    }
+
+    &-middle {
+        .btn-size(@btn-md-height, @btn-md-padding, @btn-md-font, @btn-md-radius);
+    }
+
+    &-large {
+        .btn-size(@btn-lg-height, @btn-lg-padding, @btn-lg-font, @btn-lg-radius);
+    }
+
+    &-danger {
+        .btn-type('danger');
+    }
+
+    &-primary {
+        .btn-type('primary');
+    }
+
+    &-success {
+        .btn-type('success');
+    }
+
+    &-warning {
+        .btn-type('warning');
+    }
+
+    &-ghost{
+        .btn-ghost;
+    }
+}
