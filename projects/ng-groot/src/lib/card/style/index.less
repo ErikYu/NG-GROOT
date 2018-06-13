@@ -1,0 +1,13 @@
+@import "../../aastyle/default";
+@import "./mixin";
+@card-prefix-cls: ~'gt-card';
+
+.@{card-prefix-cls} {
+    .card;
+    &-header{
+        .card-header;
+    }
+    &-content{
+        .card-content;
+    }
+}
