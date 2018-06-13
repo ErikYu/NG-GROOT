@@ -5,13 +5,15 @@ import {AppComponent} from './app.component';
 import {DemoComponent} from './demo/demo.component';
 import { CardDemoComponent } from './card-demo/card-demo.component';
 import { ButtonDemoComponent } from './button-demo/button-demo.component';
+import { InputDemoComponent } from './input-demo/input-demo.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         DemoComponent,
         CardDemoComponent,
-        ButtonDemoComponent
+        ButtonDemoComponent,
+        InputDemoComponent
     ],
     imports: [
         BrowserModule,

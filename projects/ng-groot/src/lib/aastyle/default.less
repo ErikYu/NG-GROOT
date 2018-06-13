@@ -1,3 +1,5 @@
+@import "./color";
+
 @font-default: 14px;
 
 @btn-border: 2px;
@@ -17,10 +19,10 @@
 @btn-lg-radius: 5px;
 @btn-lg-font: 16px;
 
-@btn-danger-background: #ff386a;
-@btn-primary-background: #0088ff;
-@btn-success-background: #00d977;
-@btn-warning-background: #ffcb17;
+@btn-danger-background: @danger;
+@btn-primary-background: @primary;
+@btn-success-background: @success;
+@btn-warning-background: @warning;
 
 @btn-danger-active-background: #db415b;
 @btn-primary-active-background: #418fdb;
@@ -36,3 +38,8 @@
 @card-header-padding: 12px 24px;
 @card-border-radius: 5px;
 @card-content-padding: 16px 24px;
+
+@input-primary-border: @primary;
+@input-success-border: @success;
+@input-warning-border: @warning;
+@input-danger-border: @danger;
