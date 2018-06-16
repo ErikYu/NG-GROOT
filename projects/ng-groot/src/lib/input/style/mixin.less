@@ -1,5 +1,56 @@
 .input{
-    border-style: solid;
-    border-width: 2px;
+    border: 2px solid;
     outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+    margin-right: 8px;
+    margin-bottom: 12px;
+    .input-small;
+    .input-default;
+}
+.input-default{
+    border-color: @input-default-border;
+    &:focus{
+        border-color: @input-primary-border;
+    }
+}
+.input-success {
+    border-color: @input-success-border;
+    &:focus {
+        border-color: @input-success-border;
+    }
+}
+.input-primary{
+    border-color: @input-primary-border;
+    &:focus {
+        border-color: @input-primary-border;
+    }
+}
+.input-warning{
+    border-color: @input-warning-border;
+    &:focus {
+        border-color: @input-warning-border;
+    }
+}
+.input-danger{
+    border-color: @input-danger-border;
+    &:focus {
+        border-color: @input-danger-border;
+    }
+}
+
+.input-size(@input-height, @input-padding, @input-font){
+    height: @input-height;
+    padding: @input-padding;
+    font-size: @input-font;
+}
+.input-large{
+    .input-size(@input-lg-height, @input-lg-padding, @input-lg-font)
+}
+.input-middle{
+    .input-size(@input-md-height, @input-md-padding, @input-md-font)
+}
+.input-small{
+    .input-size(@input-sm-height, @input-sm-padding, @input-sm-font)
 }

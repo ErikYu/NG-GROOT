@@ -1,1 +1,23 @@
-<input gt-input>
+<div>
+    <input gt-input [gtType]="'success'" [(ngModel)]="vals" >
+    <input gt-input [gtType]="'warning'" [(ngModel)]="vals" >
+    <input gt-input [gtType]="'primary'" [(ngModel)]="vals" >
+    <input gt-input [gtType]="'danger'" [(ngModel)]="vals" >
+    <input gt-input [placeholder]="holder">
+</div>
+
+<div>
+    <input gt-input [gtSize]="'middle'" [gtType]="'success'" [(ngModel)]="vals" >
+    <input gt-input [gtSize]="'middle'" [gtType]="'warning'" [(ngModel)]="vals" >
+    <input gt-input [gtSize]="'middle'" [gtType]="'primary'" [(ngModel)]="vals" >
+    <input gt-input [gtSize]="'middle'" [gtType]="'danger'" [(ngModel)]="vals" >
+    <input gt-input [gtSize]="'middle'" [placeholder]="holder">
+</div>
+
+<div>
+    <input gt-input [gtSize]="'large'" [gtType]="'success'" [(ngModel)]="vals" >
+    <input gt-input [gtSize]="'large'" [gtType]="'warning'" [(ngModel)]="vals" >
+    <input gt-input [gtSize]="'large'" [gtType]="'primary'" [(ngModel)]="vals" >
+    <input gt-input [gtSize]="'large'" [gtType]="'danger'" [(ngModel)]="vals" >
+    <input gt-input [gtSize]="'large'" [placeholder]="holder">
+</div>
