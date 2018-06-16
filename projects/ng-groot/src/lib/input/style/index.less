@@ -2,6 +2,7 @@
 @import "./mixin";
 
 @prefix-cls: ~"gt-input";
+@prefix-group-cls: ~"gt-input-group";
 
 .@{prefix-cls} {
     .input;
@@ -27,4 +28,19 @@
         .input-small;
     }
 
+}
+
+/*input group styles*/
+.@{prefix-group-cls} {
+    .input-group;
+    &>.@{prefix-cls} {
+        border-radius: 0;
+        margin: 0;
+    }
+    &-before{
+        .input-group-before;
+    }
+    &-after{
+        .input-group-after;
+    }
 }

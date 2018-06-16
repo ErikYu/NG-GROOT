@@ -54,3 +54,22 @@
 .input-small{
     .input-size(@input-sm-height, @input-sm-padding, @input-sm-font)
 }
+
+/*group*/
+.input-group{
+    display: table;
+    height: @input-sm-height;
+}
+.input-group-before, .input-group-after{
+    border: 2px solid;
+    border-color: @input-default-border;
+
+    display: table-cell;
+    background: #fff;
+}
+.input-group-before{
+    border-right: none;
+}
+.input-group-after{
+    border-left: none;
+}

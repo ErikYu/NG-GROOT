@@ -21,3 +21,16 @@
     <input gt-input [gtSize]="'large'" [gtType]="'danger'" [(ngModel)]="vals" >
     <input gt-input [gtSize]="'large'" [placeholder]="holder">
 </div>
+
+<div>
+    <gt-input-group [gtInputBefore]="'string'">
+        <input gt-input>
+    </gt-input-group>
+
+    <gt-input-group [gtInputBefore]="beforeTmpl" [gtInputAfter]="beforeTmpl">
+        <input gt-input>
+    </gt-input-group>
+    <ng-template #beforeTmpl>
+        <i>123</i>
+    </ng-template>
+</div>
