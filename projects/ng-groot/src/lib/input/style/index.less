@@ -34,8 +34,15 @@
 .@{prefix-group-cls} {
     .input-group;
     &>.@{prefix-cls} {
-        border-radius: 0;
         margin: 0;
+    }
+    &-has-before>.@{prefix-cls} {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    &-has-after>.@{prefix-cls} {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
     &-before{
         .input-group-before;
@@ -43,4 +50,17 @@
     &-after{
         .input-group-after;
     }
+    &-success>&-before, &-success>&-after{
+        .input-group-addon-success;
+    }
+    &-warning>&-before, &-warning>&-after{
+        .input-group-addon-warning;
+    }
+    &-primary>&-before, &-primary>&-after{
+        .input-group-addon-primary;
+    }
+    &-danger>&-before, &-danger>&-after{
+         .input-group-addon-danger;
+     }
+
 }

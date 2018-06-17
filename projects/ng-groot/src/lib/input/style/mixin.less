@@ -57,7 +57,7 @@
 
 /*group*/
 .input-group{
-    display: table;
+    display: inline-table;
     height: @input-sm-height;
 }
 .input-group-before, .input-group-after{
@@ -69,7 +69,33 @@
 }
 .input-group-before{
     border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0 5px;
 }
 .input-group-after{
     border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0 5px;
+}
+.input-group-addon-success{
+    background: @input-success-border;
+    color: #fff;
+    border-color: @input-success-border;
+}
+.input-group-addon-primary{
+    background: @input-primary-border;
+    color: #fff;
+    border-color: @input-primary-border;
+}
+.input-group-addon-warning{
+    background: @input-warning-border;
+    color: #fff;
+    border-color: @input-warning-border;
+}
+.input-group-addon-danger{
+    background: @input-danger-border;
+    color: #fff;
+    border-color: @input-danger-border;
 }

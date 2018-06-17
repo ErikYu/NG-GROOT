@@ -7,16 +7,16 @@ import {
 import { GtModifyClassService } from '../aacore/service/modify-class.service';
 
 export type GtInputSize = 'small' | 'middle' | 'large';
-export type GtInputType = 'primary' | 'success' | 'warning' | 'danger';
+export type GtInputType = 'primary' | 'success' | 'warning' | 'danger' | 'default';
 
 @Directive({
     selector: '[gt-input]',
     providers: [GtModifyClassService]
 })
-export class NgInputDirective {
+export class GtInputDirective {
     _prefixCls = 'gt-input';
     private _size;
-    private _type;
+    private _type: GtInputType = 'default';
     _el: HTMLElement;
     @Input()
     get gtSize(): GtInputSize {
@@ -40,7 +40,7 @@ export class NgInputDirective {
         const classMap: object = {
             [`${this._prefixCls}-${this.gtType}`]: this.gtType,
             [`${this._prefixCls}-${this.gtSize}`]: this.gtSize,
-        }
+        };
         this._modifyCls.renderClassList(this._el, classMap);
     }
     constructor(

@@ -26,11 +26,28 @@
     <gt-input-group [gtInputBefore]="'string'">
         <input gt-input>
     </gt-input-group>
+    <gt-input-group [gtInputBefore]="'string'">
+        <input gt-input [gtType]="'success'">
+    </gt-input-group>
 
-    <gt-input-group [gtInputBefore]="beforeTmpl" [gtInputAfter]="beforeTmpl">
-        <input gt-input>
+    <gt-input-group [gtInputBefore]="beforeTmpl" [gtInputAfter]="afterTmpl">
+        <input gt-input [gtType]="'warning'" >
     </gt-input-group>
     <ng-template #beforeTmpl>
-        <i>123</i>
+        <i>Dentity</i>
     </ng-template>
+    <ng-template #afterTmpl>
+        <b>kg/m3</b>
+    </ng-template>
+</div>
+
+<div>
+    <gt-input-group [gtInputBefore]="'string'">
+        <input gt-input [gtSize]="'middle'" >
+    </gt-input-group>
+</div>
+<div>
+    <gt-input-group [gtInputBefore]="'string'">
+        <input gt-input [gtSize]="'large'" >
+    </gt-input-group>
 </div>

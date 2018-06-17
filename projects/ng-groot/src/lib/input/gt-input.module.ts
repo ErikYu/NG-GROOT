@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { NgInputDirective } from './gt-input.directive';
+import { GtInputDirective } from './gt-input.directive';
 import { GtInputGroupComponent } from './gt-input-group.component';
 
 @NgModule({
@@ -9,11 +9,11 @@ import { GtInputGroupComponent } from './gt-input-group.component';
         CommonModule,
     ],
     declarations: [
-        NgInputDirective,
+        GtInputDirective,
         GtInputGroupComponent,
     ],
     exports: [
-        NgInputDirective,
+        GtInputDirective,
         GtInputGroupComponent,
     ]
 })
