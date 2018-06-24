@@ -7,6 +7,7 @@ import {DemoComponent} from './demo/demo.component';
 import {CardDemoComponent} from './card-demo/card-demo.component';
 import {ButtonDemoComponent} from './button-demo/button-demo.component';
 import {InputDemoComponent} from './input-demo/input-demo.component';
+import { SelectDemoComponent } from './select-demo/select-demo.component';
 
 @NgModule({
     declarations: [
@@ -14,7 +15,8 @@ import {InputDemoComponent} from './input-demo/input-demo.component';
         DemoComponent,
         CardDemoComponent,
         ButtonDemoComponent,
-        InputDemoComponent
+        InputDemoComponent,
+        SelectDemoComponent
     ],
     imports: [
         BrowserModule,
